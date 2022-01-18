@@ -1,5 +1,6 @@
 import react from "react"
 import CartWidgetContainer from './NavBarComponents/CartWidget'
+import BoostrapNavbar from 'react-bootstrap/Navbar';
 
 export default function NavBar() {
     
