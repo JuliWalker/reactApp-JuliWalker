@@ -22,7 +22,7 @@ export default function App() {
 
           {/* Los path exactos son los que van hardcodeados y no dependen de variables como los ID de los productos */}
           {/* Las rutas que van ligadas a paramentros no llevan la palabra exact */}
-          <Route exact path="/items">
+          <Route path="/items/:categoria">
             <ItemListContainer />
           </Route>
 

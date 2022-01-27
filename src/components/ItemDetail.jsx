@@ -10,7 +10,7 @@ export default function itemDetail({ producto }) {
     return (
         <>
             <div className="card" style={{width: 30 + 'rem'}}>
-                    <img src={producto.pictureURL} class="card-img-top" alt={producto.title}></img>
+                    <img src={producto.pictureURL} className="card-img-top" alt={producto.title}></img>
                     <div className="card-body">
                         <h5 className="card-title">ID: {producto.id} - {producto.title}</h5>
                         <p className="card-text">{producto.description}</p>

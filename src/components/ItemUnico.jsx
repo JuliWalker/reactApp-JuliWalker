@@ -21,7 +21,7 @@ export default function ItemUnico({ item }) {
 
     return (
         <>
-            <div className="card" style={{width: 18 + 'rem'}}>
+            <div className="card my-2" style={{width: 18 + 'rem'}}>
                     <div className="card-body">
                         <h5 className="card-title">ID: {item.id} - {item.title}</h5>
                         <p className="card-text">{item.description}</p>
