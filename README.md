@@ -1,3 +1,23 @@
+Descripción general de la pagina:
+
+Esta pagina es un E-comerce para compra de indumentaria.
+
+La pagina esta hecha en React y tienen la mayor parte de los estilos hechos con Boostrap.
+
+La pagina cuenta con una Navbar ayuda al usuario a recorrer la pagina principal, donde se encuentran listado todos los productos, y las paginas con filtros por categoria, como remeras, pantalos, etc.
+
+Ademas tocando en los botones de detalle del producto vamos a acceder a componentes de detalle que nos muestran la foto, stock y precio del producto y nos permiten elegir cuantos queremos agregar al carrito.
+
+El carrito todavia no esta integrado a la app, por lo tanto el boton de agregar al carrito no hace nada. Pero vamos a agregar esa funcionalidad y otras en las siguientes semanas.
+
+Esperemos que la pagina sea de tu agrado y que la navegabilidad te resulte practica y amigable.
+
+Saludos!
+
+
+
+Dejamos abajo algunos comentarios incluidos por React en caso de que no estes familiarizado con la herramienta:
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
