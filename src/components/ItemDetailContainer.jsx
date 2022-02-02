@@ -13,6 +13,7 @@ export default function ItemDetailContainer({ }) {
 
     useEffect(() => {
 
+        setLlegoPromesa(false)
         const promesaProductos = new Promise((resolve, reject) => {
 
             setTimeout(() => {
@@ -28,23 +29,33 @@ export default function ItemDetailContainer({ }) {
         });
 
         promesaProductos
-            .then((res) => {
-                setLlegoPromesa(true);
+            .then((res) => { 
                 const arrayAux = res;
-                setProducto(arrayAux.filter(item => item.id == itemId)[0]);
+                setProducto(arrayAux.find(item => item.id == itemId));
             })
             .catch((err) => {
-                setLlegoPromesa(true);
                 console.log(err);
             })
-    }, []);
+            .finally(() => {
+                setLlegoPromesa(true);
+            })
+    }, [itemId]);
+
+    const CarritoPrevio = 0;
+    const [added, setAdded] = useState(false);
+
+    function onAdd(cantidad) {
+        setAdded(true);
+        console.log("se agregaron " + cantidad + " " + producto.title + " al carrito")
+    }
+
 
     return (
         <>
             {(llegoPromesa) ?
                 <>
                     <div className="container my-5 text-center">
-                        <ItemDetail producto={producto} />
+                        <ItemDetail producto={producto} onAdd={onAdd} added={added} inicial={CarritoPrevio} />
                     </div>
                 </>
                 :

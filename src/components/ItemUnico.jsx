@@ -1,23 +1,10 @@
 import react from "react";
-import { useState } from "react";
-import { useEffect } from "react";
-import ItemCount from "./ItemCount";
 import { BrowserRouter, Switch, Route, useParams, Link, NavLink } from 'react-router-dom';
 
 export default function ItemUnico({ item }) {
 
     const CarritoPrevio = 0;
     const linkString = '/itemsdDetail/' + item.id;
-   
-    useEffect(() => {
-
-        
-        
-        setTimeout(() => {
-        console.log(linkString)
-        }, 3000)    
-
-        }, []);
 
     return (
         <>

@@ -13,6 +13,7 @@ export default function ItemListContainer({ }) {
 
     useEffect(() => {
 
+        setLlegoPromesa(false);
         const promesaProductos = new Promise((resolve, reject) => {
 
             setTimeout(() => {
@@ -27,7 +28,6 @@ export default function ItemListContainer({ }) {
 
         promesaProductos
             .then((res) => {
-                setLlegoPromesa(true);
                 const arrayAux = res;
                 if (categoria == 'all') {
                     setArrayProductos(arrayAux);
@@ -36,8 +36,10 @@ export default function ItemListContainer({ }) {
                 }
             })
             .catch((err) => {
-                setLlegoPromesa(true);
                 console.log(err);
+            })
+            .finally(() => {
+                setLlegoPromesa(true);
             })
     }, [categoria]);
 

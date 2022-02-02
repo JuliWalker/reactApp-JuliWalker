@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route, useParams } from 'react-router-dom';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import ItemDetailContainer from './components/ItemDetailContainer';
+import Cart from './components/Cart';
 
 export default function App() {
   return (
@@ -18,6 +19,10 @@ export default function App() {
 
           <Route exact path="/home">
             <Home />
+          </Route>
+
+          <Route exact path="/cart">
+            <Cart />
           </Route>
 
           {/* Los path exactos son los que van hardcodeados y no dependen de variables como los ID de los productos */}
