@@ -1,10 +1,13 @@
-import react from "react";
+import react, { useContext } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { BrowserRouter, Switch, Route, useParams, Link, NavLink } from 'react-router-dom';
 import ItemDetail from "./ItemDetail";
+import { cartContext } from "./context/CartProvider";
 
 export default function ItemDetailContainer({ }) {
+
+    const { addToCart } = useContext(cartContext);
 
     const [llegoPromesa, setLlegoPromesa] = useState(false);
     const [producto, setProducto] = useState({});
@@ -46,6 +49,7 @@ export default function ItemDetailContainer({ }) {
 
     function onAdd(cantidad) {
         setAdded(true);
+        addToCart(producto, cantidad)
         console.log("se agregaron " + cantidad + " " + producto.title + " al carrito")
     }
 
