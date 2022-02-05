@@ -1,7 +1,6 @@
 import CartWidgetContainer from './NavBarComponents/CartWidget'
-import BoostrapNavbar from 'react-bootstrap/Navbar';
-import react from "react"
-import { BrowserRouter, Switch, Route, useParams, Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { cartContext } from "./context/CartProvider";
 
 export default function NavBar() {
 

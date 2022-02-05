@@ -1,6 +1,5 @@
-import react from "react";
 import Carrito from '../../Images/shopping-cartV2.jpg'
-import { BrowserRouter, Switch, Route, useParams, Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function NavBar() {
     

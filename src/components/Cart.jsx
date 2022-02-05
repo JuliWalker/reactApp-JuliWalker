@@ -1,13 +1,21 @@
-import react, { useContext } from "react";
+import { useContext } from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { cartContext } from "./context/CartProvider";
 import CartItem from "./CartItem";
-import { BrowserRouter, Switch, Route, useParams, Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Cart() {
 
-    const { cart, clearCart } = useContext(cartContext);
+    const { cart, clearCart, sumTotal, sumTotalItems } = useContext(cartContext);
+
+    const [cartPrice, setCartPrice] = useState(0);
+
+    useEffect(() => {
+            setCartPrice(sumTotal());
+            let aux = sumTotalItems();
+            console.log(aux);
+    }, [])
 
     return (
         <>
@@ -21,7 +29,11 @@ export default function Cart() {
                         <Link to={'/items/all'}>Go to shop</Link>
                     </div>
                     :
-                    <button onClick={() => clearCart()} type="button" className="btn btn-danger my-4">Borrar todo</button>
+                    <div>
+                        <p className="mt-5">Cart price: {cartPrice} </p>
+                        <button type="button" className="btn btn-success m-4">Finalizar compra</button>
+                        <button onClick={() => clearCart()} type="button" className="btn btn-danger m-4">Borrar todo</button>
+                    </div>
                 }
             </div>
         </>

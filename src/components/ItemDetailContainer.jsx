@@ -1,7 +1,5 @@
-import react, { useContext } from "react";
-import { useState } from "react";
-import { useEffect } from "react";
-import { BrowserRouter, Switch, Route, useParams, Link, NavLink } from 'react-router-dom';
+import { useContext, useState, useEffect } from "react";
+import { useParams } from 'react-router-dom';
 import ItemDetail from "./ItemDetail";
 import { cartContext } from "./context/CartProvider";
 
@@ -28,13 +26,13 @@ export default function ItemDetailContainer({ }) {
                 { id: '5', title: 'Medias Arcoiris', description: 'Medias blancas con bandas de colores tipo arcoiris',category: 'medias', price: 200, pictureURL: 'http://d3ugyf2ht6aenh.cloudfront.net/stores/029/842/products/retropoint-971-a39f5424b17899712315875694192946-640-0.jpg', stock: 7 },
                 { id: '6', title: 'Remera stay positive', description: 'Remera negra con dibujo de Stay Positiv con tiburon',category: 'remeras', price: 200, pictureURL: 'https://i.ebayimg.com/images/g/80gAAOSw6qtfPTbg/s-l400.jpg', stock: 7 }]);
 
-            }, 2000)
+            }, 200)
         });
 
         promesaProductos
             .then((res) => { 
                 const arrayAux = res;
-                setProducto(arrayAux.find(item => item.id == itemId));
+                setProducto(arrayAux.find(item => item.id === itemId));
             })
             .catch((err) => {
                 console.log(err);

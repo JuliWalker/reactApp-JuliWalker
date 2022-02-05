@@ -1,8 +1,8 @@
 import './App.css'
 import NavBar from './components/NavBar'
 import ItemListContainer from './components/ItemListContainer'
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Switch, Route, useParams } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import ItemDetailContainer from './components/ItemDetailContainer';
@@ -49,3 +49,14 @@ export default function App() {
     </>
   );
 }
+
+
+// falta hacer que no se pueda agregar 0 productos al carrito - tal vez poner el contador de 1 para arriba}
+// hacer una logica para no poder pasar la cantidad total de stock de manera global y no solo por compra unica
+
+// Poner el precio total del carrito
+// Poner el numero de items agregados al carrito al lado de la imagen de la nav Y Desaparecer el carrito cuando tengo 0 items.
+
+    // Necesito mover a la Navbar la cantidad de items y mostrarla
+    // Necesito hacer que cuando saquemos items del carrito modifique el precio, tnego que ver que paremetro tiene que seguir el useEffect para que se actualice.
+    // corregir todos los warnings de las cosas que no estoy usando.

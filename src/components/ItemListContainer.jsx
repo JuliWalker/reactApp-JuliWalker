@@ -1,8 +1,6 @@
-import react from "react";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState,  useEffect } from "react";
 import ItemList from "./ItemList";
-import { BrowserRouter, Switch, Route, useParams, Link, NavLink } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 export default function ItemListContainer({ }) {
 
@@ -23,16 +21,16 @@ export default function ItemListContainer({ }) {
                 { id: '4', title: 'Gorra Heat', description: 'gorra de basket de Miami Heat',category: 'gorras', price: 200, pictureURL: 'https://caphunters.com/13564-large_default/gorra-plana-negra-ajustada-59fifty-essential-de-miami-heat-nba-de-new-era.jpg', stock: 7 },
                 { id: '5', title: 'Medias Arcoiris', description: 'Medias blancas con bandas de colores tipo arcoiris',category: 'medias', price: 200, pictureURL: 'http://d3ugyf2ht6aenh.cloudfront.net/stores/029/842/products/retropoint-971-a39f5424b17899712315875694192946-640-0.jpg', stock: 7 },
                 { id: '6', title: 'Remera stay positive', description: 'Remera negra con dibujo de Stay Positiv con tiburon',category: 'remeras', price: 200, pictureURL: 'https://i.ebayimg.com/images/g/80gAAOSw6qtfPTbg/s-l400.jpg', stock: 7 }]);
-            }, 2000)
+            }, 200)
         });
 
         promesaProductos
             .then((res) => {
                 const arrayAux = res;
-                if (categoria == 'all') {
+                if (categoria === 'all') {
                     setArrayProductos(arrayAux);
                 } else {
-                    setArrayProductos(arrayAux.filter(item => item.category == categoria));
+                    setArrayProductos(arrayAux.filter(item => item.category === categoria));
                 }
             })
             .catch((err) => {

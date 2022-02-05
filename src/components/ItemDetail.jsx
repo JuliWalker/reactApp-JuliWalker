@@ -1,12 +1,7 @@
-import react from "react";
-import { useState } from "react";
-import { useEffect } from "react";
 import ItemCount from "./ItemCount";
-import { BrowserRouter, Switch, Route, useParams, Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function itemDetail({ producto, onAdd, added, inicial }) {
-
-    const CarritoPrevio = 0;
 
     return (
         <>

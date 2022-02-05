@@ -1,4 +1,4 @@
-import react, { useContext } from "react";
+import { useContext } from "react";
 import { cartContext } from "./context/CartProvider";
 
 export default function CartItem({producto, cantidad}) {
@@ -14,8 +14,9 @@ export default function CartItem({producto, cantidad}) {
                     <p className="card-text">{producto.description}</p>
                 </div>
                 <ul className="list-group list-group-flush">
-                    <li className="list-group-item">Precio: {producto.price}</li>
-                    <li className="list-group-item">Cantidad a comprar: {cantidad}</li>
+                    <li className="list-group-item">Unit Price: {producto.price}</li>
+                    <li className="list-group-item">Amount of Items: {cantidad}</li>
+                    <li className="list-group-item">Subtotal: {cantidad*producto.price}</li>
                     <li className="list-group-item"> <button onClick={() => deleteItem(producto.id)} type="button" className="btn btn-primary my-3">Borrar</button> </li>             
                 </ul>
         </div>
