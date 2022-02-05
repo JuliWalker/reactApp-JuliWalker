@@ -57,6 +57,4 @@ export default function App() {
 // Poner el precio total del carrito
 // Poner el numero de items agregados al carrito al lado de la imagen de la nav Y Desaparecer el carrito cuando tengo 0 items.
 
-    // Necesito mover a la Navbar la cantidad de items y mostrarla
-    // Necesito hacer que cuando saquemos items del carrito modifique el precio, tnego que ver que paremetro tiene que seguir el useEffect para que se actualice.
-    // corregir todos los warnings de las cosas que no estoy usando.
+// Necesito hacer que cuando saquemos items del carrito modifique el precio, tnego que ver que paremetro tiene que seguir el useEffect para que se actualice.
