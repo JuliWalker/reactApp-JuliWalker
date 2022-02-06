@@ -4,7 +4,6 @@ import ItemListContainer from './components/ItemListContainer'
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer';
-import Home from './components/Home';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Cart from './components/Cart';
 import CartProvider from './components/context/CartProvider';
@@ -20,10 +19,6 @@ export default function App() {
 
           {/* adentro del swich va todo lo que esta routeado */}
           <Switch>
-
-            <Route exact path="/home">
-              <Home />
-            </Route>
 
             <Route exact path="/cart">
               <Cart />
