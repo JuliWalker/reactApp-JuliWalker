@@ -46,3 +46,4 @@ export default function App() {
 }
 
 // Corregir la logica de desaparecer el carrito aplicando bien sintactic Sugar.
+// Preguntar como mejorar la parte del If de ItemListContainer para no hcer una doble declaración con un VAR

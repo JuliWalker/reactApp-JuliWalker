@@ -8,7 +8,7 @@ export default function ItemUnico({ item }) {
         <>
             <div className="card my-2" style={{width: 18 + 'rem'}}>
                     <div className="card-body">
-                        <h5 className="card-title">ID: {item.id} - {item.title}</h5>
+                        <h5 className="card-title">{item.title}</h5>
                         <p className="card-text">{item.description}</p>
                         <NavLink className="btn btn-primary" to={linkString}>Item Detail</NavLink> 
                     </div>
