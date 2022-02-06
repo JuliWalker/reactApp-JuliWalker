@@ -15,7 +15,7 @@ export default function ItemCount({onAdd, inicial, stock }) {
 
     function restar() {
         let aux = cantidad;
-        if (aux > 0) {
+        if (aux > 1) {
             setCantidad(cantidad - 1)
         }
     }

@@ -7,15 +7,13 @@ import { Link } from 'react-router-dom';
 
 export default function Cart() {
 
-    const { cart, clearCart, sumTotal, sumTotalItems } = useContext(cartContext);
+    const { cart, clearCart, sumTotal } = useContext(cartContext);
 
     const [cartPrice, setCartPrice] = useState(0);
 
     useEffect(() => {
             setCartPrice(sumTotal());
-            let aux = sumTotalItems();
-            console.log(aux);
-    }, [])
+    }, [cart])
 
     return (
         <>

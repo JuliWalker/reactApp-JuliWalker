@@ -1,7 +1,16 @@
-import CartWidgetContainer from './NavBarComponents/CartWidget'
+import CartWidget from './NavBarComponents/CartWidget'
 import { NavLink } from 'react-router-dom';
+import { cartContext } from "./context/CartProvider";
+import { useEffect, useContext, useState } from 'react';
 
 export default function NavBar() {
+
+    const { cart } = useContext(cartContext);
+    const [showCart, setShowCart] = useState(false);
+
+    useEffect(() => {
+        (cart.length === 0) ? setShowCart(false) : setShowCart(true);
+    }, [cart])
 
     return (
         <>
@@ -27,7 +36,13 @@ export default function NavBar() {
                             </li>
                         </ul>
                     </div>
-                    <CartWidgetContainer />
+                    {showCart ?
+                        <CartWidget />
+                        :
+                        <div className='displayNone'>
+                        </div>
+                        // ESTO DE ACA ESTA MAL, NO ME ACUERDO COMO HACER LA SINTACTIC SUGAR CON SOLO CONDICION DE SI
+                    }
                 </div>
             </nav>
         </>

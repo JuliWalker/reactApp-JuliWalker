@@ -10,7 +10,7 @@ const CartProvider = ({ children }) => {
     const addToCart = (product, cantidad) => {
         if (isInCart(product.id)) {
             const indexItem = cart.findIndex(item => item.product.id === product.id);
-            cart[indexItem].cantidad = cart[indexItem].cantidad + cantidad;
+            cart[indexItem].cantidad = cantidad;
             setCart([...cart]);
         } else {
             setCart([...cart, { product, cantidad}])
@@ -41,7 +41,7 @@ const CartProvider = ({ children }) => {
     }
 
     return (
-        <cartContext.Provider value={{ cart, addToCart, deleteItem, clearCart, sumTotal, sumTotalItems }}>
+        <cartContext.Provider value={{ cart, addToCart, deleteItem, clearCart, sumTotal, sumTotalItems, isInCart }}>
             {children}
         </cartContext.Provider>
     )

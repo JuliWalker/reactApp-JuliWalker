@@ -50,11 +50,4 @@ export default function App() {
   );
 }
 
-
-// falta hacer que no se pueda agregar 0 productos al carrito - tal vez poner el contador de 1 para arriba}
-// hacer una logica para no poder pasar la cantidad total de stock de manera global y no solo por compra unica
-
-// Poner el precio total del carrito
-// Poner el numero de items agregados al carrito al lado de la imagen de la nav Y Desaparecer el carrito cuando tengo 0 items.
-
-// Necesito hacer que cuando saquemos items del carrito modifique el precio, tnego que ver que paremetro tiene que seguir el useEffect para que se actualice.
+// Corregir la logica de desaparecer el carrito aplicando bien sintactic Sugar.
