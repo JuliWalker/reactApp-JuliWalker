@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { cartContext } from "./context/CartProvider";
 import CartItem from "./CartItem";
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Cart() {
 
@@ -29,7 +30,7 @@ export default function Cart() {
                     :
                     <div>
                         <p className="mt-5">Cart price: {cartPrice} </p>
-                        <button type="button" className="btn btn-success m-4">Finalizar compra</button>
+                        <NavLink className="btn btn-success m-4" to='/TerminarCompra'>Finalizar compra</NavLink>
                         <button onClick={() => clearCart()} type="button" className="btn btn-danger m-4">Borrar todo</button>
                     </div>
                 }
