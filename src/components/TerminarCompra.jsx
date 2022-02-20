@@ -2,7 +2,6 @@ import React, { useState, useRef, useContext } from "react";
 import firebase from "firebase";
 import { getFirestore } from '../firebase/firebase'
 import { cartContext } from "./context/CartProvider";
-import ErrorForm from "./ErrorForm";
 import DetalleCompra from "./DetalleCompra";
 import CompraFinalizada from "./CompraFinalizada";
 
@@ -118,7 +117,13 @@ export default function TerminarCompra() {
 
                     <div className="center">
 
-                        {formError && <ErrorForm />}
+                        {formError &&
+                            <>
+                                <div className="mb-3">
+                                    <p className="error">Faltan datos en el formulario</p>
+                                </div>
+                            </>
+                        }
 
                         <button className="btn btn-primary center mb-5" onClick={() => handleClick()} >Finalizar compra</button>
 

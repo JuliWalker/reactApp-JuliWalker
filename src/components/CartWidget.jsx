@@ -1,6 +1,6 @@
-import Carrito from '../../Images/shopping-cartV2.jpg'
+import Carrito from '../Images/shopping-cartV2.jpg'
 import { NavLink } from 'react-router-dom';
-import { cartContext } from "../context/CartProvider";
+import { cartContext } from "./context/CartProvider";
 import { useContext } from 'react';
 
 export default function CartWidget() {

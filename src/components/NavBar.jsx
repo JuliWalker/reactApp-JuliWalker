@@ -1,4 +1,4 @@
-import CartWidget from './NavBarComponents/CartWidget'
+import CartWidget from './CartWidget'
 import { NavLink } from 'react-router-dom';
 import { cartContext } from "./context/CartProvider";
 import { useEffect, useContext, useState } from 'react';
