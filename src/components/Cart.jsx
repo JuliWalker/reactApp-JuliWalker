@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { cartContext } from "./context/CartProvider";
 import CartItem from "./CartItem";
-import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
 export default function Cart() {
@@ -17,7 +16,7 @@ export default function Cart() {
                 {cart.length === 0 ?
                     <div>
                         <p>Empty cart</p>
-                        <Link to={'/items/all'}>Go to shop</Link>
+                        <NavLink to={'/items/all'}>Go to shop</NavLink>
                     </div>
                     :
                     <div>
