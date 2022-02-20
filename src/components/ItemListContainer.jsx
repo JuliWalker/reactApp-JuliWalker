@@ -14,11 +14,7 @@ export default function ItemListContainer({ }) {
 
         const db = getFirestore();
         
-        if (categoria === 'all') {
-            var itemCollection = db.collection("productos")
-        } else {
-            var itemCollection = db.collection("productos").where('category', '==', categoria)
-        }
+        const itemCollection = (categoria === 'all') ? db.collection("productos") : db.collection("productos").where('category', '==', categoria)
 
         // el get devuelve una promesa y hago lo mismo que hacia con el promise
         itemCollection.get()
@@ -46,7 +42,7 @@ export default function ItemListContainer({ }) {
             {(llegoPromesa) ?
                 <>
                     <div className="container-md my-5 text-center">
-                        <div className="row justify-content-evenly">
+                        <div className="row justify-content-center align-items-center"> 
                             < ItemList arrayProductos={arrayProductos} />
                         </div>
                     </div>

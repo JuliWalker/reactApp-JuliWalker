@@ -50,10 +50,12 @@ export default function App() {
   );
 }
 
-// Corregir la logica de desaparecer el carrito aplicando bien sintactic Sugar.
-// Preguntar como mejorar la parte del If de ItemListContainer para no hcer una doble declaración con un VAR
-// hacer validación de datos en todos los formularios.
-// Limpiar el codigo de la rama MediaDeviceInfo, que no quede nada que no se use en la rama productiva
+//Como recomendación, estaría bueno si una vez que tenemos el id de la orden se reinicie el carrito, y tengas un botón para dirigir al inicio en vez del formulario. Esto ayudaría a dar un cierre a la a pp y un reinicio al terminar el ciclo de la operación! 
+
+// hacer como dijo Guille de tener componentes de logica y otros de render, no delar componentes mixtos.
+
+// Poner las imagenes en el menu de compra y ajustar la cuadrilla que para que tenga ancho maximo.
+// Limpiar el codigo de la rama main, que no quede nada que no se use en la rama productiva
 // Configurar bien el git ignore
 // actualizar el README - Escribir todos los install que llevan el proyecto (node, firebase, boostrap, reactrooter, todo con su versión instalada)
 // Revisar que onda Versel para subir el proyecto a productivo.

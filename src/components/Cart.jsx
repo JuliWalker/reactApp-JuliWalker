@@ -1,6 +1,4 @@
 import { useContext } from "react";
-import { useState } from "react";
-import { useEffect } from "react";
 import { cartContext } from "./context/CartProvider";
 import CartItem from "./CartItem";
 import { Link } from 'react-router-dom';
@@ -8,13 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Cart() {
 
-    const { cart, clearCart, sumTotal } = useContext(cartContext);
-
-    const [cartPrice, setCartPrice] = useState(0);
-
-    useEffect(() => {
-            setCartPrice(sumTotal());
-    }, [cart])
+    const { cart, clearCart, sumTotal } = useContext(cartContext);    
 
     return (
         <>
@@ -29,8 +21,8 @@ export default function Cart() {
                     </div>
                     :
                     <div>
-                        <p className="mt-5">Cart price: {cartPrice} </p>
-                        <NavLink className="btn btn-success m-4" to='/TerminarCompra'>Finalizar compra</NavLink>
+                        <p className="mt-5">Cart price: {sumTotal()} </p>
+                        <NavLink className="btn btn-success m-4" to='/TerminarCompra'>Completar compra</NavLink>
                         <button onClick={() => clearCart()} type="button" className="btn btn-danger m-4">Borrar todo</button>
                     </div>
                 }

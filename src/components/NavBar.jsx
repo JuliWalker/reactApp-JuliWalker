@@ -36,13 +36,7 @@ export default function NavBar() {
                             </li>
                         </ul>
                     </div>
-                    {showCart ?
-                        <CartWidget />
-                        :
-                        <div className='displayNone'>
-                        </div>
-                        // ESTO DE ACA ESTA MAL, NO ME ACUERDO COMO HACER LA SINTACTIC SUGAR CON SOLO CONDICION DE SI
-                    }
+                    {showCart && <CartWidget />}
                 </div>
             </nav>
         </>

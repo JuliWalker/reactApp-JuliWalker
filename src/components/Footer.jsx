@@ -49,11 +49,11 @@ export default function Footer() {
                             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                                 {/* <!-- Content --> */}
                                 <h6 className="text-uppercase fw-bold mb-4">
-                                    <i className="fas fa-gem me-3"></i>Company name
+                                    <i className="fas fa-gem me-3"></i>Walkers
                                 </h6>
                                 <p>
-                                    Here you can use rows and columns to organize your footer content. Lorem ipsum
-                                    dolor sit amet, consectetur adipisicing elit.
+                                    Walkers is an engeeniring and web development company.
+                                    If you want to know more about our work follow us in our social media networks. 
                                 </p>
                             </div>
                             {/* <!-- Grid column --> */}
@@ -62,19 +62,19 @@ export default function Footer() {
                             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                                 {/* <!-- Links --> */}
                                 <h6 className="text-uppercase fw-bold mb-4">
-                                    Products
+                                    We work with:
                                 </h6>
                                 <p>
-                                    <a href="#!" className="text-reset">Angular</a>
+                                    HTML5
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">React</a>
+                                    CSS3
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">Vue</a>
+                                    React
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">Laravel</a>
+                                    Firebase
                                 </p>
                             </div>
                             {/* <!-- Grid column --> */}
@@ -83,19 +83,19 @@ export default function Footer() {
                             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                                 {/* <!-- Links --> */}
                                 <h6 className="text-uppercase fw-bold mb-4">
-                                    Useful links
+                                    Follow Us
                                 </h6>
                                 <p>
-                                    <a href="#!" className="text-reset">Pricing</a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/julián-walker-584ab523" className="text-reset">Linkedin</a>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">Settings</a>
+                                    <a target="_blank" href="https://github.com/JuliWalker" className="text-reset">GitHub</a>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">Orders</a>
+                                    <a href="#!" className="text-reset">Instagram</a>
                                 </p>
                                 <p>
-                                    <a href="#!" className="text-reset">Help</a>
+                                    <a href="#!" className="text-reset">Facebook</a>
                                 </p>
                             </div>
                             {/* <!-- Grid column --> */}
@@ -106,13 +106,12 @@ export default function Footer() {
                                 <h6 className="text-uppercase fw-bold mb-4">
                                     Contact
                                 </h6>
-                                <p><i className="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                                <p><i className="fas fa-home me-3"></i> Buenos Aires, Siempreviva 123, Arg. </p>
                                 <p>
                                     <i className="fas fa-envelope me-3"></i>
-                                    info@example.com
+                                    julianwalker1992@gmail.com
                                 </p>
-                                <p><i className="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                                <p><i className="fas fa-print me-3"></i> + 01 234 567 89</p>
+                                <p><i className="fas fa-phone me-3"></i> + 54 11 26215896</p>
                             </div>
                             {/* <!-- Grid column --> */}
                         </div>
@@ -122,10 +121,10 @@ export default function Footer() {
                 {/* <!-- Section: Links  --> */}
 
                 {/* <!-- Copyright --> */}
-                <div className="text-center p-4">
+{/*                 <div className="text-center p-4">
                     © 2021 Copyright:
                     <a className="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-                </div>
+                </div> */}
                 {/* <!-- Copyright --> */}
             </footer>
         </>
