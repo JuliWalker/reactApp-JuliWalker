@@ -16,7 +16,6 @@ export default function ItemListContainer({ }) {
         
         const itemCollection = (categoria === 'all') ? db.collection("productos") : db.collection("productos").where('category', '==', categoria)
 
-        // el get devuelve una promesa y hago lo mismo que hacia con el promise
         itemCollection.get()
             .then((querySnapShot) => {
                 if (querySnapShot.size === 0) {

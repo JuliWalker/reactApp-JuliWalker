@@ -7,7 +7,7 @@ export default function ItemUnico({ item }) {
     return (
         <>
             <div className='col-12 col-lg-4 col-sm-6 col-xxl-3'>
-                <div className="card my-2" style={{ width: 18 + 'rem' }}>
+                <div className="card my-2 mx-auto" style={{ width: 18 + 'rem' }}>
                     <img src={item.pictureURL} className="card-img-top" alt={item.title} />
                     <div className="card-body">
                         <h5 className="card-title">{item.title}</h5>
