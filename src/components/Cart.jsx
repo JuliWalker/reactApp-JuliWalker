@@ -20,7 +20,7 @@ export default function Cart() {
                     </div>
                     :
                     <div>
-                        <p className="mt-5">Cart price: {sumTotal()} </p>
+                        <h4 className="mt-5">Valor de tu compra: {sumTotal()} </h4>
                         <NavLink className="btn btn-success m-4" to='/TerminarCompra'>Completar compra</NavLink>
                         <button onClick={() => clearCart()} type="button" className="btn btn-danger m-4">Borrar todo</button>
                     </div>

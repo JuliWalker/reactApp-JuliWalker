@@ -52,4 +52,3 @@ export default function App() {
 // Configurar bien el git ignore
 // actualizar el README - Escribir todos los install que llevan el proyecto (node, firebase, boostrap, reactrooter, todo con su versión instalada).
 // encarpetar los JSX de modo que sean prolijos.
-// cambiar el Item Detail para que quede con texto y boton al costaod. Usar un grid responsive.
