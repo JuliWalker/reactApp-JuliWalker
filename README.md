@@ -19,7 +19,8 @@ Al termianr de comrpar poodremos ir al carrito (se accede desde la NavBar o en e
 Cuando queramos completar la compra nos pedira que llenemos un formulario con nuestros datos.
 La orden de compra se almacenará en Firebse con todos los datos de los productos comprados y del cliente.
 
-![Demostration](https://drive.google.com/file/d/12Hq73FRfiK7C-jb08fmkfMWiUyZztXIe/view?usp=sharing)
+Para ver una demostración de la navegación ir al siguiente link:
+https://drive.google.com/file/d/12Hq73FRfiK7C-jb08fmkfMWiUyZztXIe/view?usp=sharing
 
 ### TOOLS USED TO BUILD THE APP:
 
