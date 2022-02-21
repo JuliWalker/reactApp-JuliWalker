@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function Cart() {
 
-    const { cart, clearCart, sumTotal } = useContext(cartContext);    
+    const { cart, clearCart, sumTotal } = useContext(cartContext);
 
     return (
         <>

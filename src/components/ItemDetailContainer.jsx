@@ -11,24 +11,24 @@ export default function ItemDetailContainer({ }) {
     const [llegoPromesa, setLlegoPromesa] = useState(false);
     const [producto, setProducto] = useState({});
     const [CarritoPrevio, setCarritoPrevio] = useState(1);
+    
     const { itemId } = useParams();
-
 
     useEffect(() => {
 
         const db = getFirestore();
 
         const itemCollection = db.collection("productos");
-        
-        const miItem = itemCollection.doc( itemId );
+
+        const miItem = itemCollection.doc(itemId);
 
         miItem.get()
-            .then((doc) => {        
+            .then((doc) => {
                 if (!doc.exists) {
-                console.log('no existe ese documento');
-                return
+                    console.log('no existe ese documento');
+                    return
                 }
-                setProducto({ id: doc.id, ...doc.data() });       
+                setProducto({ id: doc.id, ...doc.data() });
             })
             .catch((err) => {
                 console.log(err);
@@ -48,7 +48,6 @@ export default function ItemDetailContainer({ }) {
         }
     }, []);
 
-
     const [added, setAdded] = useState(false);
 
     function onAdd(cantidad) {
@@ -56,12 +55,11 @@ export default function ItemDetailContainer({ }) {
         addToCart(producto, cantidad)
     }
 
-
     return (
         <>
             {(llegoPromesa) ?
                 <>
-                    <div className="container my-5 text-center">
+                    <div className="container my-5">
                         <ItemDetail producto={producto} onAdd={onAdd} added={added} inicial={CarritoPrevio} />
                     </div>
                 </>

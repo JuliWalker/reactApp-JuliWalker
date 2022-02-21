@@ -4,7 +4,7 @@ export default function DetalleCompra(item) {
         <>
             <ul>
                 <li> {item.item.product.title} x {item.item.cantidad} </li>
-                <li> Subtotal: {item.item.cantidad*item.item.product.price} </li>
+                <li> Subtotal: {item.item.cantidad * item.item.product.price} </li>
             </ul>
         </>
     )

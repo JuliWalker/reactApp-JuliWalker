@@ -13,7 +13,7 @@ const CartProvider = ({ children }) => {
             cart[indexItem].cantidad = cantidad;
             setCart([...cart]);
         } else {
-            setCart([...cart, { product, cantidad}])
+            setCart([...cart, { product, cantidad }])
         }
     }
 
@@ -24,11 +24,11 @@ const CartProvider = ({ children }) => {
 
     const sumTotal = () => {
         return (cart.length > 0) ? cart.map((item) => item.product.price * item.cantidad).reduce((a, b) => a + b) : 0;
-    }   
-    
+    }
+
     const sumTotalItems = () => {
         return (cart.length > 0) ? cart.map((item) => item.cantidad).reduce((a, b) => a + b) : 0;
-    } 
+    }
 
     const isInCart = (id) => {
         return cart.some(item => item.product.id === id)

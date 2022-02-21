@@ -54,69 +54,50 @@ export default function TerminarCompra() {
                 .catch((err) => {
                     console.log(err);
                 });
-
         }
     }
 
     return (
-
         <>
-
             {(orderId) ?
-
                 < CompraFinalizada idCompra={orderId} />
-
                 :
-
                 <>
-
-
                     <h2 className="center mt-3">Dejanos tus datos para poder finalizar la compra!</h2>
 
                     <div className="grid">
 
                         <div className="form">
-
                             <h3>Ingresa tus datos:</h3>
-
                             <div className="mb-3">
                                 <input type="text" name="name" ref={nameRef} placeholder="Nombre y Apelllido" className="form-control" />
                             </div>
-
                             <div className="mb-3">
                                 <input type="text" name="mobile" ref={mobileRef} placeholder="Nro de Celular" className="form-control" />
                             </div>
-
                             <div className="mb-3">
                                 <input type="text" name="email" ref={emailRef} placeholder="Email" className="form-control" />
                             </div>
-
                             <div className="mb-3">
                                 <input type="text" name="state" ref={stateRef} placeholder="Provincia" className="form-control" />
                             </div>
-
                             <div className="mb-3">
                                 <input type="text" name="city" ref={cityRef} placeholder="Ciudad" className="form-control" />
                             </div>
-
                             <div className="mb-3">
                                 <input type="text" name="address" ref={addressRef} placeholder="Direccion" className="form-control" />
                             </div>
-
                         </div>
 
                         <div className="detalleCompra">
-
                             <h3>Detalles de la compra:</h3>
                             {cart.map(item => <DetalleCompra item={item} key={item.product.id} />)}
                             <h4>Total a pagar: {sumTotal()} </h4>
-
                         </div>
 
                     </div>
 
                     <div className="center">
-
                         {formError &&
                             <>
                                 <div className="mb-3">
@@ -124,15 +105,10 @@ export default function TerminarCompra() {
                                 </div>
                             </>
                         }
-
                         <button className="btn btn-primary center mb-5" onClick={() => handleClick()} >Finalizar compra</button>
-
                     </div>
-
                 </>
             }
-
         </>
-
     );
 }

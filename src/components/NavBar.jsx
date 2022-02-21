@@ -6,11 +6,6 @@ import { useEffect, useContext, useState } from 'react';
 export default function NavBar() {
 
     const { cart } = useContext(cartContext);
-    const [showCart, setShowCart] = useState(false);
-
-    useEffect(() => {
-        (cart.length === 0) ? setShowCart(false) : setShowCart(true);
-    }, [cart])
 
     return (
         <>
@@ -36,7 +31,7 @@ export default function NavBar() {
                             </li>
                         </ul>
                     </div>
-                    {showCart && <CartWidget />}
+                    {cart.length !== 0 && <CartWidget />}
                 </div>
             </nav>
         </>

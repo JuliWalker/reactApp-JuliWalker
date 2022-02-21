@@ -5,7 +5,7 @@ export default function itemDetail({ producto, onAdd, added, inicial }) {
 
     return (
         <>
-            <div className="gridDetail">
+            <div className="gridDetail text-center">
                 <div>
                     <img src={producto.pictureURL} className="img-fluid" alt={producto.title}></img>
                 </div>

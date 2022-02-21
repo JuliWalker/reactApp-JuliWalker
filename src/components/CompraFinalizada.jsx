@@ -5,11 +5,11 @@ import { NavLink } from 'react-router-dom';
 
 export default function CompraFinalizada(idCompra) {
 
-    const { clearCart } = useContext(cartContext);  
+    const { clearCart } = useContext(cartContext);
 
     useEffect(() => {
-            clearCart();
-        }, []);
+        clearCart();
+    }, []);
 
     return (
         <>
