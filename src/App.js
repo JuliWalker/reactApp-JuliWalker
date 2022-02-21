@@ -48,7 +48,7 @@ export default function App() {
   );
 }
 
-// hacer como dijo Guille de tener componentes de logica y otros de render, no delar componentes mixtos.
-// Configurar bien el git ignore
+// hacer como dijo Guille de tener componentes de logica y otros de render, no dejar componentes mixtos.
 // actualizar el README - Escribir todos los install que llevan el proyecto (node, firebase, boostrap, reactrooter, todo con su versión instalada).
-// encarpetar los JSX de modo que sean prolijos.
+// Revisar faltas de ortografia
+// Poner un loader lindo
