@@ -49,5 +49,4 @@ export default function App() {
 }
 
 // actualizar el README - Escribir todos los install que llevan el proyecto (node, firebase, boostrap, reactrooter, todo con su versión instalada).
-// Revisar faltas de ortografia
 // Poner un loader lindo

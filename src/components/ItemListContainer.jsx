@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import ItemList from "./ItemList";
 import { useParams } from 'react-router-dom';
 import { getFirestore } from '../firebase/firebase'
+import Loader from "./Loader";
 
 export default function ItemListContainer({ }) {
 
@@ -42,7 +43,7 @@ export default function ItemListContainer({ }) {
                     < ItemList arrayProductos={arrayProductos} />
                 </>
                 :
-                <>Loading...</>
+                <Loader/>
             }
         </>
     )

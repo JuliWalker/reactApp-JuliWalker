@@ -2,7 +2,8 @@ import { useContext, useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
 import ItemDetail from "./ItemDetail";
 import { cartContext } from "./context/CartProvider";
-import { getFirestore } from '../firebase/firebase'
+import { getFirestore } from '../firebase/firebase';
+import Loader from "./Loader";
 
 export default function ItemDetailContainer({ }) {
 
@@ -64,7 +65,7 @@ export default function ItemDetailContainer({ }) {
                     </div>
                 </>
                 :
-                <>Loading...</>
+                <Loader/>
             }
         </>
     )
