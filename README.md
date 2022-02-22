@@ -24,18 +24,18 @@ https://drive.google.com/file/d/12Hq73FRfiK7C-jb08fmkfMWiUyZztXIe/view?usp=shari
 
 ### TOOLS USED TO BUILD THE APP:
 
-**Node v16.13.1**
-**react router DOM** (buscar versión y como hacer el install)
-**Firebase's Firestore** (buscar version y como instalar)
-**ReactJS** (buscar version y como instalar)
+**Node.js v16.13.1** Descargar de la pagina de node e instalar
+**npm v8.1.2** Se instala junto con Node
+**ReactJS**
+**react router DOM v5.2.0** correr el comando **"npm install react-router-dom@5.2.0"** (no usar la última versión porque puede introducir errores)
+**Firebase v8.8.0** correr el comando **"npm install firebase@8.8.0"** - Lo usamos como reemplazo de nuestro back end
+**Loader de nomjs react-spiners** - correr el comando **"npm install --save react-spinners"** - Lo usamos para importar nuestro Loader
+**Boostrap** correr el comando **"npm install react-boostrap boostrap"** - Implementado en varios estilos del proyecto
 
 ### HOW TO SET THE APP LOCALLY:
 
 Clone this repository and run **npm install** inside the repository directory.
 After finished installation run **npm start** to open the app in the browser.
-
-
-
 
 
 Actualizada por ultima vez el 21/2/2021
