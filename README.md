@@ -41,6 +41,7 @@ https://drive.google.com/file/d/12Hq73FRfiK7C-jb08fmkfMWiUyZztXIe/view?usp=shari
 ### HOW TO SET THE APP LOCALLY:
 
 Clone this repository and run **npm install** inside the repository directory.
+
 After finished installation run **npm start** to open the app in the browser.
 
 
