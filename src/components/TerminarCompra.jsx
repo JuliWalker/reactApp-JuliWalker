@@ -85,7 +85,7 @@ export default function TerminarCompra() {
                                 <input type="text" name="city" ref={cityRef} placeholder="Ciudad" className="form-control" />
                             </div>
                             <div className="mb-3">
-                                <input type="text" name="address" ref={addressRef} placeholder="Direccion" className="form-control" />
+                                <input type="text" name="address" ref={addressRef} placeholder="Dirección" className="form-control" />
                             </div>
                         </div>
 

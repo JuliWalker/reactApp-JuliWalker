@@ -48,7 +48,6 @@ export default function App() {
   );
 }
 
-// hacer como dijo Guille de tener componentes de logica y otros de render, no dejar componentes mixtos.
 // actualizar el README - Escribir todos los install que llevan el proyecto (node, firebase, boostrap, reactrooter, todo con su versión instalada).
 // Revisar faltas de ortografia
 // Poner un loader lindo
